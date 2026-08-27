@@ -1,3 +1,5 @@
+import { asset } from '../utils/asset'
+
 const categoryDefinitions = [
   {
     slug: 'cooking-equipment',
@@ -163,7 +165,7 @@ const inferConfiguration = (name) => {
 
 export const productCategories = categoryDefinitions.map(({ names, ...category }) => ({
   ...category,
-  image: `/images/products/${category.slug}.jpg`,
+  image: asset(`/images/products/${category.slug}.jpg`),
   count: names.length,
 }))
 
@@ -195,7 +197,7 @@ export const products = categoryDefinitions.flatMap((category) =>
       categorySlug: category.slug,
       category: category.title,
       icon: category.icon,
-      image: `/images/products/items/${slug}.${productImageExt(slug)}`,
+      image: asset(`/images/products/items/${slug}.${productImageExt(slug)}`),
       description: `${name} for professional commercial-kitchen applications. Final configuration is selected according to workflow, site conditions, output, and budget.`,
       attributes: [
         { label: 'Product type', value: category.title },

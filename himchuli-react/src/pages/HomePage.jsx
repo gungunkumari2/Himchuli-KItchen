@@ -8,6 +8,7 @@ import { company } from '../data/company'
 import { projects } from '../data/projects'
 import { homeHeroSlides } from '../data/siteContent'
 import { clientGroups } from '../data/trust'
+import { asset } from '../utils/asset'
 
 export default function HomePage() {
   return (
@@ -21,7 +22,7 @@ export default function HomePage() {
           </>
         }
         subheadline="Professional kitchen equipment, stainless-steel fabrication and complete solutions for hotels, restaurants, bakeries and institutions."
-        backgroundImage="/bannerimage.png"
+        backgroundImage={asset('/bannerimage.png')}
         primaryCta={{ label: 'Explore Products', to: '/products' }}
         secondaryCta={{ label: 'Request a Quote', to: '/contact' }}
       />
@@ -107,7 +108,7 @@ export default function HomePage() {
           <article className="group-company-card">
             <div className="group-company-card__logo">
               <img
-                src="/yo-himchuli-kitchen-logo.png"
+                src={asset('/yo-himchuli-kitchen-logo.png')}
                 alt="Yo Himchuli Kitchen Nepal Pvt. Ltd."
               />
             </div>

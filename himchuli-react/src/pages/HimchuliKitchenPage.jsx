@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { company } from '../data/company'
+import { asset } from '../utils/asset'
 
 const services = [
   {
@@ -51,7 +52,7 @@ export default function HimchuliKitchenPage() {
 
           <div className="subsidiary-hero__logo">
             <img
-              src="/yo-himchuli-kitchen-logo.png"
+              src={asset('/yo-himchuli-kitchen-logo.png')}
               alt="Yo Himchuli Kitchen Nepal Pvt. Ltd."
             />
           </div>

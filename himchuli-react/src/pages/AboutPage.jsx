@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero'
 import SectionIntro from '../components/SectionIntro'
 import { company, industries } from '../data/company'
 import { heroImages, timeline } from '../data/siteContent'
+import { asset } from '../utils/asset'
 
 export default function AboutPage() {
   return (
@@ -30,7 +31,7 @@ export default function AboutPage() {
 
           <img
             className="rounded-media"
-            src="/images/products/stainless-steel-fabrication.jpg"
+            src={asset('/images/products/stainless-steel-fabrication.jpg')}
             alt="Fabrication work"
             loading="lazy"
           />

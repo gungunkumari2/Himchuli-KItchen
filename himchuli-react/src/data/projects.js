@@ -1,3 +1,5 @@
+import { asset } from '../utils/asset'
+
 export const projects = [
   {
     slug: 'complete-commercial-kitchen-installation',
@@ -6,7 +8,7 @@ export const projects = [
     location: 'Nepal',
     description:
       'A source-grounded installation showcase representing stainless cooking lines, preparation counters, and extraction systems pictured in the company brochure.',
-    image: '/images/projects/complete-commercial-kitchen-installation.jpg',
+    image: asset('/images/projects/complete-commercial-kitchen-installation.jpg'),
     scope: ['Cooking line', 'Preparation stations', 'Stainless-steel fabrication', 'Extraction hood'],
   },
   {
@@ -16,7 +18,7 @@ export const projects = [
     location: 'Nepal',
     description:
       'A representative high-volume kitchen layout for healthcare, education, or workplace catering environments.',
-    image: '/images/projects/institutional-catering-kitchen.jpg',
+    image: asset('/images/projects/institutional-catering-kitchen.jpg'),
     scope: ['Bulk preparation', 'Wash area', 'Storage systems', 'Service workflow'],
   },
   {
@@ -26,7 +28,7 @@ export const projects = [
     location: 'Nepal',
     description:
       'A commercial bakery setup representing mixing, baking, rack, cooling, and stainless work areas.',
-    image: '/images/projects/bakery-production-setup.jpg',
+    image: asset('/images/projects/bakery-production-setup.jpg'),
     scope: ['Mixing', 'Proofing', 'Baking', 'Cooling and storage'],
   },
   {
@@ -36,7 +38,7 @@ export const projects = [
     location: 'Nepal',
     description:
       'A large production-kitchen showcase highlighting coordinated cooking, refrigeration, preparation, and ventilation zones.',
-    image: '/images/projects/resort-production-kitchen.jpg',
+    image: asset('/images/projects/resort-production-kitchen.jpg'),
     scope: ['Main kitchen', 'Cold storage', 'Service support', 'Ventilation'],
   },
 ]

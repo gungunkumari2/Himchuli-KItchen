@@ -1,3 +1,5 @@
+import { asset } from '../utils/asset'
+
 export const navItems = [
   { label: 'Home', path: '/' },
   { label: 'Products', path: '/products' },
@@ -10,26 +12,25 @@ export const navItems = [
 ]
 
 export const heroImages = {
-  home: '/images/heroes/home.jpg',
-  products: '/images/heroes/products.jpg',
-  solutions: '/images/heroes/solutions.jpg',
-  projects: '/images/heroes/projects.jpg',
-  about: '/images/heroes/about.jpg',
-  blog: '/images/heroes/blog.jpg',
-  contact: '/images/heroes/contact.jpg',
+  home: asset('/images/heroes/home.jpg'),
+  products: asset('/images/heroes/products.jpg'),
+  solutions: asset('/images/heroes/solutions.jpg'),
+  projects: asset('/images/heroes/projects.jpg'),
+  about: asset('/images/heroes/about.jpg'),
+  blog: asset('/images/heroes/blog.jpg'),
+  contact: asset('/images/heroes/contact.jpg'),
 }
 
 export const homeHeroSlides = [
-  '/images/heroes/home.jpg',
-  '/images/heroes/slides/equipment-grid-1.jpg',
-  '/images/heroes/slides/equipment-grid-2.jpg',
-  '/images/heroes/slides/equipment-grid-4.jpg',
-  '/images/heroes/slides/equipment-grid-5.jpg',
-  '/images/heroes/slides/equipment-grid-6.jpg',
-  '/images/heroes/slides/equipment-grid-7.jpg',
-  '/images/heroes/slides/equipment-grid-8.jpg',
+  asset('/images/heroes/home.jpg'),
+  asset('/images/heroes/slides/equipment-grid-1.jpg'),
+  asset('/images/heroes/slides/equipment-grid-2.jpg'),
+  asset('/images/heroes/slides/equipment-grid-4.jpg'),
+  asset('/images/heroes/slides/equipment-grid-5.jpg'),
+  asset('/images/heroes/slides/equipment-grid-6.jpg'),
+  asset('/images/heroes/slides/equipment-grid-7.jpg'),
+  asset('/images/heroes/slides/equipment-grid-8.jpg'),
 ]
-
 
 export const stats = [
   { icon: 'calendar_month', value: '25+', label: 'Years of Experience' },
@@ -56,19 +57,18 @@ export const blogPosts = [
     category: 'Equipment Guides',
     title: 'Essential Equipment for a Restaurant Kitchen',
     description: 'A practical view of the core stations and machine categories required for reliable service.',
-    image: '/images/products/cooking-equipment.jpg',
+    image: asset('/images/products/cooking-equipment.jpg'),
   },
   {
     category: 'Refrigeration',
     title: 'How to Choose Commercial Refrigeration Equipment',
     description: 'Storage capacity, temperature control, and workflow are the key variables to balance.',
-    image: '/images/products/refrigeration.jpg',
+    image: asset('/images/products/refrigeration.jpg'),
   },
   {
     category: 'Maintenance',
     title: 'A Preventive Maintenance Checklist for Kitchen Operations',
     description: 'Routine checks that help reduce downtime and extend the life of commercial equipment.',
-    image: '/images/products/dishwashing-wash-area.jpg',
+    image: asset('/images/products/dishwashing-wash-area.jpg'),
   },
 ]
-

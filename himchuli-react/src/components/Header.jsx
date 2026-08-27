@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { company } from '../data/company'
 import { navItems } from '../data/siteContent'
+import { asset } from '../utils/asset'
 
 function NavItems({ onNavigate = () => {} }) {
   return navItems.map((item) => (
@@ -53,7 +54,7 @@ export default function Header() {
         <div className="container site-header__brand-row">
           <Link className="brand" to="/" onClick={() => setIsOpen(false)}>
             <img
-              src="/himchuli-logo-borderless.jpg"
+              src={asset('/himchuli-logo-borderless.jpg')}
               alt="Himchuli Steeltech Industries Pvt. Ltd."
               className="brand-logo"
             />

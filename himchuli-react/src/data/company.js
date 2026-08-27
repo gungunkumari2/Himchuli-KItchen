@@ -1,3 +1,5 @@
+import { asset } from '../utils/asset'
+
 export const company = {
   registeredName: 'Himchuli Steeltech Industries Pvt. Ltd.',
   shortName: 'Himchuli Steeltech',
@@ -21,8 +23,8 @@ export const company = {
     },
   ],
   website: 'www.himchulikitchen.com',
-  catalogue: '/downloads/himchuli-product-catalogue.pdf',
-  profile: '/downloads/himchuli-company-profile.pdf',
+  catalogue: asset('/downloads/himchuli-product-catalogue.pdf'),
+  profile: asset('/downloads/himchuli-company-profile.pdf'),
 }
 
 export const industries = [

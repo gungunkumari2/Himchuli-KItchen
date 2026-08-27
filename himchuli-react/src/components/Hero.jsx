@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../utils/asset'
 
 const defaultStats = [
   { icon: 'calendar_month', value: '25+', label: 'Years' },
@@ -18,7 +19,7 @@ export default function Hero({
     </>
   ),
   subheadline = 'Professional kitchen equipment, stainless-steel fabrication and complete solutions for hotels, restaurants, bakeries and institutions.',
-  backgroundImage = '/bannerimage.png',
+  backgroundImage = asset('/bannerimage.png'),
   backgroundAlt = 'Professional stainless-steel commercial kitchen',
   primaryCta = { label: 'Explore Products', to: '/products' },
   secondaryCta = { label: 'Request a Quote', to: '/contact' },
