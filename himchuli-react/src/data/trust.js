@@ -1,0 +1,63 @@
+export const clientGroups = [
+  {
+    title: 'Hospitality & Restaurants',
+    clients: [
+      'KFC — company materials state all Nepal outlets',
+      'Pizza Hut — company materials state all Nepal outlets',
+      'Hard Rock Café',
+      'Hyatt Place',
+      'Hotel Vivanta',
+      'Soaltee Westend',
+      'Hotel Sarovar Portico',
+      'Hotel Barahi',
+      'Fishtail Lodge',
+      'Rupakot Resort',
+    ],
+  },
+  {
+    title: 'Healthcare & Corporate',
+    clients: [
+      'Grande International Hospital',
+      'Grande City Hospital',
+      'HAMS Hospital',
+      'Chirayu Hospital',
+      'Ncell',
+      'MAW',
+      'Jagdamba Cement',
+      'Saurya Cement',
+      'Quest Pharma',
+      'Bhaskar Pharmaceuticals',
+    ],
+  },
+  {
+    title: 'Education & Institutions',
+    clients: [
+      'St. Mary’s School',
+      'Modern Indian School',
+      'DAV School & College',
+      'Brihaspati Vidya Sadan',
+      'NAMI College',
+      'Ideal Model College',
+      'Valley College',
+      'Uni-global College',
+    ],
+  },
+]
+
+export const materialBrands = [
+  'Hobart',
+  'Lainox',
+  'Sammic',
+  'Öztiryakiler',
+  'Icematic',
+  'MKN',
+  'Elanpro',
+  'Ansul',
+  'Hatco',
+  'Infrico',
+  'Berto’s',
+  'T&S',
+  'Sirman',
+  'Robot Coupe',
+  'Salva',
+]

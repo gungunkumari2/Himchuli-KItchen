@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Himchuli Steeltech Industries - Homepage</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#930010",
+                    "background": "#fcf9f8",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "surface-container-high": "#eae7e7",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1c1b1b",
+                    "on-surface-variant": "#404945",
+                    "secondary-container": "#dfe0e0",
+                    "on-tertiary-fixed": "#410003",
+                    "tertiary-container": "#8d000e",
+                    "primary": "#003529",
+                    "on-primary": "#ffffff",
+                    "secondary": "#5d5f5f",
+                    "secondary-fixed": "#e2e2e2",
+                    "surface-bright": "#fcf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "outline": "#707975",
+                    "on-secondary-container": "#616363",
+                    "on-primary-container": "#82bda9",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "surface": "#fcf9f8",
+                    "primary-fixed": "#b2efda",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#454747",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdad6",
+                    "inverse-primary": "#97d3be",
+                    "surface-dim": "#dcd9d9",
+                    "primary-fixed-dim": "#97d3be",
+                    "surface-variant": "#e5e2e1",
+                    "inverse-on-surface": "#f3f0ef",
+                    "tertiary": "#630007",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#2e6858",
+                    "on-tertiary-container": "#ff9289",
+                    "on-primary-fixed": "#002018",
+                    "primary-container": "#0b4d3e",
+                    "outline-variant": "#bfc9c4",
+                    "on-background": "#1c1b1b",
+                    "on-primary-fixed-variant": "#105041",
+                    "tertiary-fixed-dim": "#ffb3ac",
+                    "surface-container": "#f0eded",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-container-low": "#f6f3f2",
+                    "inverse-surface": "#313030"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "80px",
+                    "base": "8px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased pt-20">
+<!-- TopNavBar (Shared Component) -->
+<nav class="bg-surface-container-lowest dark:bg-surface-dim docked full-width top-0 border-b border-outline-variant flat no shadows fixed left-0 w-full z-50">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<a class="font-display-lg text-display-lg text-primary dark:text-primary-fixed tracking-tight" href="#">
+                Himchuli Steeltech
+            </a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed font-bold border-b-2 border-primary py-2 hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim py-2 hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Products</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim py-2 hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Solutions</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim py-2 hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Projects</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim py-2 hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">About Us</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim py-2 hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Blog</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity hidden md:block">
+                Get a Quote
+            </button>
+<!-- Mobile Menu Icon (Placeholder for interaction) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[819px] flex items-center bg-surface-container-high overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-40" data-alt="A sprawling, immaculate, high-end commercial kitchen in a luxury hotel, featuring gleaming brushed stainless steel countertops, heavy-duty industrial stoves, and overhead ventilation hoods. The environment is illuminated by bright, clinical white LED lighting, emphasizing cleanliness, precision engineering, and professional order. Deep forest green accents subtly integrate into the scene, matching a corporate modern, industrial minimalist aesthetic. The mood is highly professional, sterile, and ready for high-volume culinary production." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYqOBk1UOrpJWRw212KX60VqkHONiEx0S8SJZqOIXnpgpu15DNNAaIOlls_ZkkT9RIeOimFeaUDseB-q5tGiQo2KI7yBXeywrsZ5FwT-CaVJ4U35BQst4dJYClKQ8xVGFlW3Xd9c_Ruj3Wg7bzgkqafKplZ2Guu2bIR0nEaRJl0FlyJDCEJTL-PnkHQMqFWgsE2zNBBhRcaq7cGq0aZOQ7Gdm2hzx-ILOvDY_pFxSEbpoXLPKPJdM')"></div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-2xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
+                        Engineering the Future of Commercial Kitchens.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                        Premium stainless-steel solutions designed for the rigors of hotels, hospitals, and industrial institutions. Precision crafted for absolute reliability.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:shadow-lg transition-all">
+                            Explore Solutions
+                        </button>
+<button class="bg-transparent border-2 border-primary-container text-primary-container font-label-md text-label-md px-8 py-4 rounded hover:bg-primary hover:text-on-primary hover:border-primary transition-all">
+                            Get a Quote
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="border-y border-outline-variant bg-surface-container-lowest">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-wrap justify-between items-center gap-8 opacity-60 grayscale">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">verified</span>
+<span class="font-label-md text-label-md">ISO 9001 Certified</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">local_fire_department</span>
+<span class="font-label-md text-label-md">Fire Safety Compliant</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">eco</span>
+<span class="font-label-md text-label-md">Sustainable Materials</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+<span class="font-label-md text-label-md">500+ Institutional Partners</span>
+</div>
+</div>
+</section>
+<!-- Features Overview -->
+<section class="py-section-gap max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Precision Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Every joint, weld, and surface is meticulously crafted using advanced machinery to ensure flawless structural integrity and a pristine finish that withstands the harshest environments.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-2xl">support_agent</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Reliable Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        From initial consultation to post-installation maintenance, our dedicated engineering team provides uninterrupted technical assistance to keep your operations running smoothly.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-shadow">
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-2xl">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Custom Fabrication</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        We don't just supply equipment; we tailor exact geometric solutions to fit the unique spatial and operational demands of your specific commercial floor plan.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Product Categories -->
+<section class="bg-surface-container-low py-section-gap border-y border-outline-variant">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-2">Equipment Portfolio</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Explore our comprehensive range of high-grade stainless steel products built for demanding commercial workflows.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-primary transition-colors" href="#">
+                        View All Categories <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Category 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up shot of a heavy-duty commercial stainless steel gas cooking range in a brightly lit industrial kitchen. The metal is pristine, brushed, and reflective, showing high-quality engineering. Subtle dark green branding accents are visible in the background out of focus. Lighting is neutral white, emphasizing the robust, minimalist industrial design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByLxcbJxbR9jayCuymkbgeAcBbfq-jJAntZDdcq9vfjOkrqrLr5hGNbFSwU3IAcobcBq4E5R-6p4ycOaRJByYCDiHUkI1lvrkeIulW-iNnNXOTkOqlP2msGDJkO_1D6PAejljBbopCYhH8sKTjASjt7qVOsczHO-Ww5z6WHLa_JLFwd2XXDB9tSKFQjU-V6AT7ziK1P8ccvCaG1o9XvHRQIapgkwrcb60MO0Kl-KCu-5wo0BC0TQ8"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cooking Equipment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">High-performance ranges and ovens.</p>
+<span class="text-primary-container font-label-md flex items-center gap-1 group-hover:gap-2 transition-all">Explore <span class="material-symbols-outlined text-sm">east</span></span>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A row of massive, commercial-grade walk-in stainless steel refrigerators and freezers. The environment is cool, clinical, and brightly lit with modern LED panels. The brushed steel surfaces reflect the clean white light, portraying a sense of hygiene, durability, and high-end manufacturing suitable for large-scale institutional use." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_mm5Jx5Iv7b5VYAHhEmjqviYbnQc52mKX_U_XNA5gI6KSHbYgELlu-oS4X5rqP-79CQC-qWEPzYjkWrpFxjcAe3S5nkKevSKIjZswTKKrJ3Et5F_WsIyAD9DbxLyyeVv0pWhwPUEopgX0DFM6ixonvLB28dcpdRfCWxL1iysPcSikl1DZloS0zZ7p0hn-9FeiaHQy4gCpTvmOfVD0zGuEu8TPechzCMvZkMsi6IuvnVGmiP0eHIU"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Refrigeration</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Advanced cooling and storage.</p>
+<span class="text-primary-container font-label-md flex items-center gap-1 group-hover:gap-2 transition-all">Explore <span class="material-symbols-outlined text-sm">east</span></span>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial bakery equipment featuring large stainless steel dough mixers and multi-deck ovens. The setting is a spacious, modern production facility with clean geometric lines. The lighting is bright and even, highlighting the impeccable construction of the machinery. The aesthetic is orderly, functional, and solidly engineered for heavy daily usage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfG-rDs7Kg9Bty_lgiMeYQOp-xKRADa7rINt2g6X0iYhiu6r0m5DgiaZQwIsg7ynCO6Y1-vedhkIQEU-uxLZ7bfLLMwbMWcWk5Ke9NrXnkwDXZYHd4UnXDCFDnztCg9VSI7LQ3dpAi08MitKOdLUTAN9FbE0SlVl5adpUsN8n7H0L9nkrxv4DD8MY5fcouV9OujgkYnyXyxSzsRfp9MpyP6HjJNm1lC3mj_ykZQ5iCm15FKFX4LI8"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Bakery Equipment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Precision mixers and ovens.</p>
+<span class="text-primary-container font-label-md flex items-center gap-1 group-hover:gap-2 transition-all">Explore <span class="material-symbols-outlined text-sm">east</span></span>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all group cursor-pointer">
+<div class="aspect-square relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Custom stainless steel fabrication worktables, sinks, and wall shelves arranged in a modular, efficient layout within a bright commercial prep area. The metalwork shows perfectly welded seams and a uniform brushed finish. The scene communicates structural integrity, hygienic design, and premium minimalist aesthetics tailored for professional culinary teams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf8YxceUqsTjoK4CadTImguzS_xaQNN2f3dWs4IdMBdKdqSmtUhrub6TsLJDWgZJpabXi2GxzbGu_K_VuwR_cnu91KnLDUW1djZlQMyTckqIM0m_Gt43s7Hyns39wPqVmd1a3kgdunRtGfjr8MaIVkbfdCQh6_IpN7eV1_mMi1zTW_56_Ls3sjp2ZU64ojebKYycekT7xYMNArZnncT_KHBIBMKb0l8XddCvGkyZNYR53zLqwtgIA"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Custom Fabrication</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Tailored sinks, tables &amp; racks.</p>
+<span class="text-primary-container font-label-md flex items-center gap-1 group-hover:gap-2 transition-all">Explore <span class="material-symbols-outlined text-sm">east</span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Solutions Overview (Bento Grid) -->
+<section class="py-section-gap max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-4">Specialized Industry Solutions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We understand that different institutions have unique operational flows. Our tailored setups are designed to maximize efficiency and hygiene across various sectors.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-gutter h-auto md:h-[600px]">
+<!-- Large Feature (Hotels) -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-xl overflow-hidden relative group border border-outline-variant">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A sprawling, immaculate, high-end commercial kitchen in a luxury hotel, featuring gleaming brushed stainless steel countertops, heavy-duty industrial stoves, and overhead ventilation hoods. The environment is illuminated by bright, clinical white LED lighting, emphasizing cleanliness, precision engineering, and professional order. Deep forest green accents subtly integrate into the scene, matching a corporate modern, industrial minimalist aesthetic. The mood is highly professional, sterile, and ready for high-volume culinary production." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5vwktpwXi0D3etcc3n7IjCmBgjk1U3-h5T3xp6ACqidfSoN6kmlMYRecy1c7l-OvhUhOkn7ecxHEMcdvIXvG0QTCjMtlZvomIoMFAPPjLuB7QLjr4Mt3-eOMmOHIzT2rTux9bM4gTDa3ZxY8gANLtg_dfh2KBdVryOK5IJ5LG3nK5Gnb7ldZrGYWRw5LF9PMYe-zPAk12O5c7rdSvwAs2lMe3foSD44vJ_9bo1bNUzCQcOJ3cr20"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001c15]/90 via-[#001c15]/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="flex items-center gap-2 text-primary-fixed mb-2">
+<span class="material-symbols-outlined">hotel</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Hospitality</span>
+</div>
+<h3 class="font-display-lg-mobile text-display-lg-mobile text-on-primary mb-3">Hotels &amp; Resorts</h3>
+<p class="font-body-md text-body-md text-on-primary/80 max-w-md">High-volume capacity setups designed for 24/7 room service, banquet halls, and multi-restaurant operations.</p>
+</div>
+</div>
+<!-- Small Feature 1 (Hospitals) -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden relative group border border-outline-variant">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A highly sterile hospital food preparation area featuring completely seamless, medical-grade stainless steel surfaces. The lighting is intense, cool, and shadow-free to ensure maximum hygiene visibility. The equipment is minimalist, focusing on easy sanitization and precise temperature control. The overall aesthetic is clinical, safe, and immaculately clean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf6sSF9nBEgSXdsX7RW1TPkGa7gbK5PZ6PBtNjf7NnQn4bji9rbc_BR8APEW71YPc6RCweYm545VKJeci-iGllCUWoWIVFMLTIFwEZ9hVLLQPkG-XPg1IDFHkZnr3nKLORxLq9gebPBBvnyAhU0pYQlx-HhVrk-xbZ7WAgFLyPR8MJ_OCE0R1HaomCPSwfDKqGoOfhdnA_qT3V3gEBR0qiGE7YlSQsFqjPuOgcYEzVMoUcDQEAFBo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001c15]/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex items-center gap-2 text-primary-fixed mb-2">
+<span class="material-symbols-outlined">local_hospital</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Healthcare</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Hospitals</h3>
+<p class="font-body-md text-body-md text-on-primary/80">Ultra-hygienic, easy-to-sanitize environments.</p>
+</div>
+</div>
+<!-- Small Feature 2 (Schools) -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden relative group border border-outline-variant">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A modern institutional cafeteria serving line made entirely of brushed stainless steel with integrated heated and refrigerated wells. The environment is spacious and designed for rapid student flow. Overhead lighting is bright and inviting. The engineering is robust, designed to withstand high daily wear and tear while maintaining a clean, orderly appearance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLgoys51YjNQlSegtb_60T_UH-_IeLNg2A63o4EsXmzhmp04Xsul31lveCApEcAJ4xuQM08ukG2qWLjXvdCy-kuEuxGihYK4tmfKmxqUujgzkyc6mmpRYvtm42cTK2x1k42zIiK4qw5_rIV5KTtiEVXSZUVt0l7i31IEwnLXYdlqpmTQNfIbVFd_f2R6VyTFUIc7O9IJXcMCBahcoQ4izpPL0rCsrc57dqrKL-jOApdyfXUEbJHzw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001c15]/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<div class="flex items-center gap-2 text-primary-fixed mb-2">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Education</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Schools</h3>
+<p class="font-body-md text-body-md text-on-primary/80">Durable, high-throughput cafeteria lines.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="py-section-gap bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<span class="text-primary-container font-label-md text-label-md uppercase tracking-widest mb-4 block">Featured Installation</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">The Grand Himalayan Kitchen Project</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                            A comprehensive turnkey solution delivered for a premium 5-star property. This project required custom fabrication of an 800 sq.ft main kitchen, specialized bakery wing, and three distinct satellite preparation zones, all engineered to handle a throughput of 2000 meals daily.
+                        </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Seamless integration of heavy-duty cooking blocks.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Custom ventilation systems for advanced thermal management.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Ergonomically designed fabrication tables to optimize chef workflow.</span>
+</li>
+</ul>
+<button class="bg-transparent border border-primary-container text-primary-container font-label-md text-label-md px-6 py-3 rounded hover:bg-surface-container-high transition-colors flex items-center gap-2">
+                            View Case Study <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="order-1 lg:order-2 relative">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A wide, dynamic shot of a newly installed, gleaming stainless steel commercial kitchen in a grand hotel. The perspective highlights a long central cooking island surrounded by pristine prep tables and sophisticated ventilation hoods. The lighting is architectural and bright, reflecting off the flawless metal surfaces. The scene embodies premium industrial design, high-end fabrication, and professional culinary excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIXnTiTeRCpT1SAtr9apxDIhGkBBsqfH8lwrcVdgKLWjTzuG8NHCjz0WOvNuvHMjqYEEiDzviAzoNQw-ZlX96TiXG0GBb1WqPCzQ57-gMqZpeBvaTvem4q7B6GzdEj4AN_WmRyhYtuPRR21cre8n-9501vwdn6T4IEqPstg2kt_GdehZ9GBkpCnZKNdAzhoB1BXLLY7B-dCpAi6sl3d6D7fKhyfh7Rm9qHFcpF_0M9RdwPPLqxnfQ"/>
+</div>
+<!-- Decorative element backing -->
+<div class="absolute -bottom-6 -left-6 w-full h-full border-2 border-primary-container/20 rounded-xl -z-10 hidden md:block"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface full-width bottom-0 text-on-surface dark:text-inverse-on-surface font-body-md text-body-md">
+<div class="w-full py-section-gap px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-[1200px] mx-auto opacity-80 hover:opacity-100 transition-opacity">
+<div class="col-span-1 md:col-span-1">
+<h3 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4">Himchuli Steeltech</h3>
+<p class="text-on-surface-variant dark:text-outline-variant mb-4">
+                    Engineering the future of commercial kitchens with premium stainless-steel solutions.
+                </p>
+<p class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant">
+                    © 2024 Himchuli Steeltech Industries. All rights reserved.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md font-semibold text-primary dark:text-primary-fixed mb-4">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Home</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Products</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Solutions</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Projects</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md font-semibold text-primary dark:text-primary-fixed mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Blog</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md font-semibold text-primary dark:text-primary-fixed mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

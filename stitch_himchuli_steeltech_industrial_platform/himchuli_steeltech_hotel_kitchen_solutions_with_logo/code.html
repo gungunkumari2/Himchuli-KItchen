@@ -1,0 +1,240 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Hotel Kitchen Solutions - Himchuli Steeltech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary": "#5d5f5f",
+                        "inverse-surface": "#313030",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary-fixed": "#002018",
+                        "on-primary-container": "#82bda9",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "primary": "rgb(19, 147, 72)",
+                        "tertiary-fixed-dim": "#ffb3ac",
+                        "inverse-primary": "#97d3be",
+                        "on-tertiary-fixed-variant": "#930010",
+                        "tertiary": "#630007",
+                        "tertiary-container": "#8d000e",
+                        "on-secondary-container": "#616363",
+                        "on-primary-fixed-variant": "#105041",
+                        "surface-container": "#f0eded",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#404945",
+                        "primary-container": "rgb(19, 147, 72)",
+                        "surface-dim": "#dcd9d9",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#dfe0e0",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#707975",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "primary-fixed": "#b2efda",
+                        "outline-variant": "#bfc9c4",
+                        "on-tertiary-fixed": "#410003",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-tint": "#2e6858",
+                        "on-tertiary-container": "#ff9289",
+                        "on-error": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "error-container": "#ffdad6",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary-fixed-dim": "#97d3be",
+                        "surface-bright": "#fcf9f8",
+                        "surface-variant": "#e5e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom styles for high-end industrial look */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(224, 224, 224, 0.5);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .bento-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+        .bento-item.featured {
+            grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+            .bento-item.featured {
+                grid-column: span 1;
+            }
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(19, 147, 72, 0.9) 0%, rgba(19, 147, 72, 0.6) 50%, rgba(19, 147, 72, 0.3) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-20">
+<!-- TopNavBar Component -->
+<header class="bg-surface-container-lowest dark:bg-surface-dim border-b border-outline-variant fixed top-0 left-0 w-full z-50 flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto scale-95 duration-150 transform origin-top left-1/2 -translate-x-1/2 w-full transition-transform hover:scale-100">
+<img alt="Himchuli Steeltech Logo" class="h-[45px] w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlDbxEOuW8YwrMe0juQKi2_eGycJKgR2yoQrbFr4fJJw0tYgWQu8kWQrXa2gxgXVpg8QKXAqSIAEN1tNl6YoSmTCVhThwoono_QF77vnD58VBX-_Q2C-voUMYLsvWMVQ3rVC9h1kipJ3jOf5yO745WeVbndh28DS-M5OJkwkjKzSzkLqWeZ9fTvozGloOnSk8oisJpI-uc2jsMVs01Bgd1NCJ6dcECR8cZ3GkC5sap9Vb3WmiHE-BwheXBO-kFohTD">
+<nav class="hidden md:flex gap-6">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">Products</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">Solutions</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">Projects</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">About Us</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors font-label-md text-label-md" href="#">Blog</a>
+</nav>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded font-label-md text-label-md hover:opacity-90 transition-opacity hidden md:block">Get a Quote</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<main class="flex-grow w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Breadcrumb -->
+<div class="py-6 text-sm text-secondary font-label-md flex items-center gap-2">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Solutions</a>
+<span class="material-symbols-outlined text-[16px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary font-bold">Hotel Kitchen Solutions</span>
+</div>
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden mb-section-gap h-[400px] md:h-[500px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A pristine, highly organized modern hotel commercial kitchen featuring gleaming stainless steel equipment. Industrial grade ovens, pristine prep stations, and professional exhaust hoods are visible under bright, clean, high-key lighting. The scene conveys absolute professional order, high hygiene standards, and robust industrial capability. Corporate modern B2B aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8UgaQ2sFQ7ROXgXNBvhAAGptzJXQejlKGOWHGVX8CKIhUEoPcMIpuDuw95HvFyxD5Vx-W5ov78E3efVKvY1DiWNh7AObJoPIpSfnnrfOZfmubKHvGXVpHZ_q5-0SRSqobK5yqiiziRuJ4WU4HnAJPS6PcvNPICGWLtpgCfpe2iPgs9fXtsN4bPl94f9PTes5kwKcFKTqANeLkt1xXaSnNEvRCAZU0BiLbdfVwtxkcFkVfC54r_fg')"></div>
+<div class="absolute inset-0 hero-overlay flex flex-col justify-center px-8 md:px-16">
+<h1 class="font-display-lg-mobile md:font-display-lg text-on-primary mb-4 max-w-2xl">Hotel Kitchen Solutions</h1>
+<p class="font-body-lg text-surface-container-low max-w-xl">Complete commercial kitchen equipment and infrastructure for hotels and hospitality businesses. Engineered for precision, built for endurance.</p>
+</div>
+</section>
+<!-- Challenge Section (Bento Grid) -->
+<section class="mb-section-gap">
+<div class="mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-4 border-l-4 border-primary-container pl-4">What a Hotel Kitchen Requires</h2>
+<p class="font-body-md text-secondary max-w-2xl">Hospitality environments demand relentless performance. Our solutions are engineered to meet the unique structural and operational challenges of high-volume hotel service.</p>
+</div>
+<div class="bento-grid">
+<!-- Card 1 -->
+<div class="glass-card rounded-xl p-8 flex flex-col bento-item">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center mb-6 text-primary-container">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">High Capacity</h3>
+<p class="font-body-md text-on-surface-variant flex-grow">Designed for high-volume service, ensuring seamless operations during peak hours without compromising quality or speed.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card rounded-xl p-8 flex flex-col bento-item">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center mb-6 text-primary-container">
+<span class="material-symbols-outlined" data-icon="route">route</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Efficient Workflow</h3>
+<p class="font-body-md text-on-surface-variant flex-grow">Optimized spatial layouts that minimize crossover traffic, drastically improving speed of service and staff safety.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-xl p-8 flex flex-col bento-item">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center mb-6 text-primary-container">
+<span class="material-symbols-outlined" data-icon="cleaning_services">cleaning_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Hygienic Construction</h3>
+<p class="font-body-md text-on-surface-variant flex-grow">Constructed with high-grade, easy-to-clean stainless steel to maintain uncompromising sanitation standards.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-card rounded-xl p-8 flex flex-col bento-item">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center mb-6 text-primary-container">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Reliable Equipment</h3>
+<p class="font-body-md text-on-surface-variant flex-grow">Durable, industrial-grade equipment designed to withstand the rigorous demands of 24/7 continuous hospitality operations.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface mt-auto">
+<div class="w-full py-section-gap px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-[1200px] mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4">Himchuli Steeltech</div>
+<p class="font-body-md text-body-md text-on-surface dark:text-inverse-on-surface opacity-80">© 2024 Himchuli Steeltech Industries. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Products</a>
+<a class="text-primary dark:text-primary-fixed font-semibold hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Solutions</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Projects</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Blog</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Contact</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,21 @@
+export const authorizedDistributors = [
+  {
+    name: 'HIMCO',
+    slug: 'himco',
+    image: '/images/distributors/himco.png',
+    featured: true,
+  },
+  { name: 'Hobart', slug: 'hobart', image: '/images/distributors/hobart.png' },
+  { name: 'Sammic', slug: 'sammic', image: '/images/distributors/sammic.png' },
+  { name: 'Xsoni Systems', slug: 'xsoni-systems', image: '/images/distributors/xsoni-systems.png' },
+  { name: 'MKN', slug: 'mkn', image: '/images/distributors/mkn.png' },
+  { name: 'Lainox', slug: 'lainox', image: '/images/distributors/lainox.png' },
+  { name: 'Icematic', slug: 'icematic', image: '/images/distributors/icematic.png' },
+  { name: 'Salva', slug: 'salva', image: '/images/distributors/salva.png' },
+  { name: 'Öztiryakiler', slug: 'ozti', image: '/images/distributors/ozti.png' },
+  { name: 'Hatco', slug: 'hatco', image: '/images/distributors/hatco.png' },
+  { name: 'Elanpro', slug: 'elanpro', image: '/images/distributors/elanpro.png' },
+  { name: 'T&S', slug: 'ts', image: '/images/distributors/ts.png' },
+  { name: 'Sirman', slug: 'sirman', image: '/images/distributors/sirman.png' },
+  { name: 'Astoria', slug: 'astoria', image: '/images/distributors/astoria.png' },
+]

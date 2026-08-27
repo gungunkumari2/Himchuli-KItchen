@@ -1,0 +1,302 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Blog - Himchuli Steeltech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#930010",
+                        "surface-bright": "#fcf9f8",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#f0eded",
+                        "tertiary-fixed-dim": "#ffb3ac",
+                        "tertiary-container": "#8d000e",
+                        "primary-fixed": "#b2efda",
+                        "primary": "#139348",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-primary-container": "#82bda9",
+                        "on-primary-fixed": "#002018",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface": "#fcf9f8",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-surface": "#313030",
+                        "on-background": "#1c1b1b",
+                        "tertiary-fixed": "#ffdad6",
+                        "secondary-fixed": "#e2e2e2",
+                        "secondary-container": "#dfe0e0",
+                        "outline-variant": "#bfc9c4",
+                        "tertiary": "#630007",
+                        "on-error": "#ffffff",
+                        "secondary": "#5d5f5f",
+                        "on-secondary-container": "#616363",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "background": "#fcf9f8",
+                        "on-tertiary-container": "#ff9289",
+                        "surface-variant": "#e5e2e1",
+                        "outline": "#707975",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#139348",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#2e6858",
+                        "primary-fixed-dim": "#97d3be",
+                        "on-surface-variant": "#404945",
+                        "on-surface": "#1c1b1b",
+                        "on-primary-fixed-variant": "#105041",
+                        "on-tertiary-fixed": "#410003",
+                        "inverse-primary": "#97d3be"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .industrial-pattern {
+            background-image: radial-gradient(#dcd9d9 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-surface-dim font-label-md text-label-md docked full-width top-0 border-b border-outline-variant flat no shadows fixed top-0 left-0 w-full z-50 flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="font-display-lg text-display-lg text-primary dark:text-primary-fixed">
+            Himchuli Steeltech
+        </div>
+<nav class="hidden md:flex space-x-6 items-center">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Products</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Solutions</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Projects</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">About Us</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary hover:text-primary-container dark:hover:text-primary-fixed-dim transition-colors scale-95 duration-150" href="#">Blog</a>
+</nav>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-90 transition-opacity">
+            Get a Quote
+        </button>
+</header>
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="bg-surface-container-low industrial-pattern py-section-gap px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-[800px] mx-auto">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                    Commercial Kitchen Insights
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Guides, ideas and practical information for planning and operating professional kitchens.
+                </p>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="py-12 px-margin-mobile md:px-margin-desktop border-b border-surface-variant">
+<div class="max-w-[1200px] mx-auto flex flex-nowrap overflow-x-auto gap-4 pb-4 md:flex-wrap md:justify-center">
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap">Kitchen Planning</button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">Equipment Guides</button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">Refrigeration</button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">Bakery</button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">Restaurant</button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">Hotel</button>
+<button class="bg-surface-container-high text-on-surface px-6 py-2 rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">Maintenance</button>
+</div>
+</section>
+<!-- Featured Article -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1200px] mx-auto">
+<article class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col md:flex-row group cursor-pointer">
+<div class="w-full md:w-1/2 h-64 md:h-auto relative">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A pristine, highly organized modern commercial kitchen interior. The image is a professional architectural photograph showcasing gleaming brushed stainless steel countertops, heavy-duty industrial ranges, and expansive exhaust hoods. Bright, even white lighting illuminates the space, creating a clean, sterile, and highly efficient atmosphere suitable for a B2B audience. The composition highlights structural integrity and premium manufacturing quality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmaNops3f_VvUUJdEOCkoIage9Fwozpsy5dWFRNpxrxYU2wz-xY7t9NYadVpe-5F3U8vxPdD0W96gkgwq9-Q2VI3DNnoePwwnn0nzQQNaSFXklWEKlscKCSXgzano7XvVnIGeTRVn3c8hXIe4NhAUnl2lE3afZ5mmYFur8rxwROyVDhUWx_HmByDJj8CY4Ggk56D9ZB1RNJO5fErFtmPhSPie9nnQMQ4vMuAN047GssODOzqu41XA')"></div>
+</div>
+<div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-4 font-label-md text-label-md text-primary">
+<span>Kitchen Planning</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="text-on-surface-variant">5 min read</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 group-hover:text-primary transition-colors">
+                            The Future of Commercial Kitchen Design in Nepal
+                        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Explore how modern efficiency standards, advanced hygiene protocols, and smart industrial equipment are reshaping the landscape of high-volume food preparation facilities.
+                        </p>
+<div class="flex items-center font-label-md text-label-md text-primary gap-2">
+                            Read Article <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop bg-surface-container">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer flex flex-col">
+<div class="w-full aspect-square relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A detailed blueprint or architectural rendering of a commercial kitchen layout spread on a stainless steel drafting table. Professional drafting tools like compasses and metallic rulers rest alongside it. The lighting is crisp and cool, emphasizing precision, planning, and industrial engineering. The mood is highly professional and analytical, aligning with B2B structural design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARCM7Z_lbA_9axlCkkEC6d0yuWJ4uCS_IqQxC8qWXJwYt7vE-ZFtMvstmqMAWcbxJTrHi5JJkRtzX54bqtGQzWJu8r8YFTww9KKkZHirBiVBXgh7FDLwPhmbBKGNS7sZ4gl14m9lZH5cGr3vXGpsR7kkZkpe4dnlBUhHY501V6a1nU0bTo_uw5CecXd2DryMq-Y9Kht1cRd0C-FOHnjqmgcRZ4pRn79HsIrSlCGbanSRw23x-Q6pU')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-3 block">Kitchen Planning</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4 group-hover:text-primary transition-colors">How to Plan a Commercial Kitchen</h3>
+<div class="mt-auto flex items-center font-label-md text-label-md text-primary gap-2">
+                                Read More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer flex flex-col">
+<div class="w-full aspect-square relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Close up professional photograph of a heavy-duty stainless steel commercial oven and range block. The metal surface is impeccably clean, reflecting bright, neutral lighting. The focus is on the robust, precision-engineered gas dials and thick metal grates, conveying durability, industrial strength, and top-tier restaurant equipment quality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZno673srb2XavRJ-jH-CMCh3JLjQhPy1CA4tCKsCovznDJNmSaOd589-KsTaebgdygimfhArUAQknugNUSIN1BWSNvvIgXr0wo1ltSSodXf-eZ_spgjAHtjIrCELmlyG-QRVOV37TgMr4Xq_JEZz345eINQoAQJfNObtYT7LD_S5S4Gm4Dv7GMScUsyp3UozljzvHLxZV9SpkRqr9d5jf4AW7M_z68xk4DXzZPihC8fwYQsuIAe8')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-3 block">Equipment Guides</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4 group-hover:text-primary transition-colors">Essential Equipment for a Restaurant Kitchen</h3>
+<div class="mt-auto flex items-center font-label-md text-label-md text-primary gap-2">
+                                Read More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer flex flex-col">
+<div class="w-full aspect-square relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A row of massive, state-of-the-art commercial stainless steel refrigerators in an industrial storage facility. The metal doors are sleek and uniform, illuminated by bright, cool-toned warehouse lighting. The scene emphasizes immense storage capacity, precise temperature control engineering, and rigorous hygiene standards inherent in professional refrigeration." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIf8fAWmaGsZONoMs4MnkyTtjd1Yer82yWidJhXX1xoQqdyqFXXnZFg8L4q84v1c1a9iB40FIobd1bq-oSGEzmyDGG3MhzFmr_2ZMRsSztusTT31XbmtReKsUTDQKymd40oZA2BVVDUjHc-Av6O-I9LTX4yZkT9LCjnmhXldVRrOne4TfqmMEJk1FDYxvHynIPis-37l-KU6bXRtNV39c8pdUKH7rKvGuYaQggwvif3_gx2se9bSo')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-3 block">Refrigeration</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4 group-hover:text-primary transition-colors">How to Choose Commercial Refrigeration Equipment</h3>
+<div class="mt-auto flex items-center font-label-md text-label-md text-primary gap-2">
+                                Read More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer flex flex-col">
+<div class="w-full aspect-square relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A high-quality image of a clipboard with a comprehensive printed checklist resting on a pristine stainless steel prep table in a commercial kitchen. A heavy metallic pen lies next to it. The background softly blurs into a well-lit, organized industrial kitchen environment, symbolizing thorough preparation, audits, and professional facility management." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOGIyCbVpzb4Xt0H0pI7y-5HVSmAhA2Uxegbm7H0mfjzciEg0u_Mj97ssBTZNvnj1TUPMiGS5ug92CkiXO11mbZEg8iu_BCOxtHbydW8HxNSmfwq9NBwciUnZ8ZL-PeAgblaOHGPk8fFQ6OYCmfYcNlli1xnO_14MYagQVJ-BuD8ZMkpJvI7JCwz38Ht2_ebj7pD_p1Jry0jKYiRzXnm1931gIfT4JES5FmiH11pE7zhXByfnAsiQ')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-3 block">Kitchen Planning</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4 group-hover:text-primary transition-colors">Commercial Kitchen Equipment Checklist</h3>
+<div class="mt-auto flex items-center font-label-md text-label-md text-primary gap-2">
+                                Read More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer flex flex-col">
+<div class="w-full aspect-square relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A wide, dynamic shot of an expansive, multi-station hotel banquet kitchen. Dozens of stainless steel prep islands form geometric lines leading into the distance. The lighting is intensely bright and professional, highlighting the massive scale and structural organization required for high-volume hospitality catering." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiAuHR4TZK9AN51JizOfrRWLcXR9pfgE2hTPVMSHpg-n1HWU-MkzNstjt6IbzvuuwQzH4XDS1gAwI31rozVpgn7n5G7JC3r1bPvXT_Aq-Ygl9LW0dPwsw2vDcHl_c93OuMlFmzAOTsxX_SJqRm4uxhehFX73UFkb7mktR9Gc-p7_kDhhx-oGTfyEM-DAAjr6lmKeg-goJCEWjk_fgQjwGV3isQXivEz7dpSufjIOprZsw2Wanx9ns')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-3 block">Hotel</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4 group-hover:text-primary transition-colors">How to Plan a Hotel Kitchen</h3>
+<div class="mt-auto flex items-center font-label-md text-label-md text-primary gap-2">
+                                Read More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm hover:shadow-md transition-shadow overflow-hidden group cursor-pointer flex flex-col">
+<div class="w-full aspect-square relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A dramatic architectural photo looking up at a massive, intricate network of commercial kitchen exhaust hoods and ventilation ductwork. The stainless steel surfaces gleam under stark, directional lighting, emphasizing industrial engineering, airflow dynamics, and the heavy-duty nature of professional HVAC systems." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYB0pw-oS7yppF5DizW9v3ijDR0b3o3qvRYhthiuqZyfpzP8oAbeAelxN-pbRJEVpvit9Rs2-vMkIuYJmu0KsL3CjUx7wFYjEnpXj54lzTOcCBxzjfAmpcwPQzuCPreWgLxsMg2uLEMUH7UqEQmA3PXsW1WjzlteLBfVGF3NAvSt5lM-NsWAEJKQiRAj5C0zYaLos6gZB-6UOOIyHIJqPm4TTky2DFyaGZG6U63nEKTPezSbtETq8')"></div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<span class="font-label-md text-label-md text-primary mb-3 block">Maintenance</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4 group-hover:text-primary transition-colors">Understanding Commercial Kitchen Exhaust Systems</h3>
+<div class="mt-auto flex items-center font-label-md text-label-md text-primary gap-2">
+                                Read More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary text-on-primary py-section-gap px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-[600px] mx-auto">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8">
+                    Need help planning your kitchen?
+                </h2>
+<button class="bg-on-primary text-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-surface-container transition-colors">
+                    Contact Himchuli
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface font-body-md text-body-md text-on-surface dark:text-inverse-on-surface full-width bottom-0 bg-surface-container-highest dark:bg-inverse-surface flat no shadows w-full py-section-gap px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-[1200px] mx-auto mt-auto">
+<div class="col-span-1 md:col-span-4 mb-8">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed">
+                Himchuli Steeltech
+            </div>
+</div>
+<div class="col-span-1">
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Home</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Products</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Solutions</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Projects</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">About Us</a></li>
+<li><a class="text-primary dark:text-primary-fixed font-semibold hover:underline transition-all opacity-80 hover:opacity-100" href="#">Blog</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Contact</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant dark:text-outline-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-outline-variant text-center md:text-left text-on-surface-variant">
+            © 2024 Himchuli Steeltech Industries. All rights reserved.
+        </div>
+</footer>
+</body></html>

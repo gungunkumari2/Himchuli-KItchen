@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | Himchuli Steeltech Industries Pvt. Ltd.</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config injected from Design System -->
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "inverse-on-surface": "#eaf1ff",
+                "on-secondary-fixed-variant": "#46464e",
+                "secondary": "#5e5d66",
+                "tertiary-fixed-dim": "#c4c7c5",
+                "primary-fixed-dim": "#6cdd88",
+                "secondary-fixed": "#e4e1eb",
+                "on-error-container": "#93000a",
+                "error": "#ba1a1a",
+                "surface": "#f8f9ff",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#181c1b",
+                "inverse-primary": "#6cdd88",
+                "on-tertiary-container": "#fafdfb",
+                "primary-container": "#00873f",
+                "tertiary": "#595d5b",
+                "on-surface-variant": "#3e4a3e",
+                "tertiary-fixed": "#e0e3e1",
+                "surface-dim": "#cbdbf5",
+                "on-primary": "#ffffff",
+                "on-error": "#ffffff",
+                "secondary-fixed-dim": "#c7c5ce",
+                "surface-tint": "#006d32",
+                "surface-container-highest": "#d3e4fe",
+                "secondary-container": "#e4e1eb",
+                "on-surface": "#0b1c30",
+                "surface-variant": "#d3e4fe",
+                "tertiary-container": "#717574",
+                "on-primary-fixed": "#00210b",
+                "background": "#f8f9ff",
+                "on-tertiary-fixed-variant": "#434846",
+                "on-secondary-container": "#64636c",
+                "primary-fixed": "#89faa2",
+                "on-secondary-fixed": "#1b1b22",
+                "outline": "#6e7a6d",
+                "outline-variant": "#bdcabb",
+                "on-background": "#0b1c30",
+                "surface-container-high": "#dce9ff",
+                "inverse-surface": "#213145",
+                "error-container": "#ffdad6",
+                "surface-container-lowest": "#ffffff",
+                "surface-container": "#e5eeff",
+                "on-primary-container": "#f7fff3",
+                "surface-bright": "#f8f9ff",
+                "primary": "#006b31",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed-variant": "#005224",
+                "surface-container-low": "#eff4ff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "xl": "80px",
+                "sm": "12px",
+                "margin-desktop": "40px",
+                "lg": "48px",
+                "base": "8px",
+                "md": "24px",
+                "xs": "4px",
+                "section-gap": "120px"
+        },
+        "fontFamily": {
+                "body-sm": [
+                        "Inter"
+                ],
+                "headline-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-lg": [
+                        "Hanken Grotesk"
+                ],
+                "headline-xl": [
+                        "Hanken Grotesk"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "label-md": [
+                        "JetBrains Mono"
+                ],
+                "label-sm": [
+                        "JetBrains Mono"
+                ],
+                "display-lg": ["Hanken Grotesk"],
+                "display-lg-mobile": ["Hanken Grotesk"],
+                "headline-sm": ["Hanken Grotesk"]
+        },
+        "fontSize": {
+                "body-sm": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "14px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}]
+        }
+},
+    },
+  }
+</script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9ff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="text-on-surface antialiased pt-20">
+<!-- TopNavBar Component -->
+<nav class="bg-surface-container-lowest border-b border-outline-variant fixed top-0 left-0 w-full z-50 flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="font-display-lg text-primary text-[24px] md:text-[32px] tracking-tight">Himchuli Steeltech</div>
+<div class="hidden md:flex gap-gutter items-center font-label-md text-label-md">
+<a class="text-secondary hover:text-primary-container transition-colors scale-95 duration-150" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary scale-95 duration-150" href="#">Products</a>
+<a class="text-secondary hover:text-primary-container transition-colors scale-95 duration-150" href="#">Solutions</a>
+<a class="text-secondary hover:text-primary-container transition-colors scale-95 duration-150" href="#">Projects</a>
+<a class="text-secondary hover:text-primary-container transition-colors scale-95 duration-150" href="#">About Us</a>
+<a class="text-secondary hover:text-primary-container transition-colors scale-95 duration-150" href="#">Blog</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-primary-container text-on-primary px-6 py-3 rounded-DEFAULT font-label-md text-label-md hover:opacity-90 transition-opacity">Get a Quote</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[614px] min-h-[400px] flex flex-col justify-end px-margin-mobile md:px-margin-desktop py-16 bg-surface-variant overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-40" data-alt="A wide, ultra-high-definition photograph of a pristine, modern commercial kitchen. Gleaming stainless steel countertops, heavy-duty gas ranges, and industrial exhaust hoods are visible under bright, cool white lighting. The atmosphere is professional, orderly, and engineered for high performance. Subtle corporate green accents in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAglu2YRz2a8wciZYCnJ2nZUOb-uRyXA_lbpPhWVWFA_QIeHTqKFMCf83FOy7DVhSrfEUZ-UshHxlmMYR--51YRlAihepNFxy3RzwEHmNZbRMGjmCBpuvD5IUyjLBCDuD9vJuUAsedyp7i62sFer_vGBSznp95wb8KsM-FMdwR45xwx7FhKmwF9Jb6TJMWoJkCQhYJIZVWJyxsCgB88s_1bHaVJNXyBr_8KnO7ZlJrvDhZaE3E2uEM')"></div>
+<div class="relative z-10 max-w-[1200px] mx-auto w-full">
+<div class="text-on-surface-variant font-label-md mb-4 flex items-center gap-2">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-primary">Products</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4 max-w-3xl">Commercial Kitchen Equipment</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Explore our complete range of professional kitchen equipment and commercial food-service solutions, engineered for durability and performance.</p>
+</div>
+</header>
+<!-- Category Grid Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Category Card 1 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg border border-surface-variant shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all overflow-hidden cursor-pointer">
+<div class="aspect-square bg-surface-container w-full overflow-hidden relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A close-up studio shot of a heavy-duty industrial gas range made of brushed stainless steel. The burners are thick cast iron. The lighting highlights the metallic textures and engineering precision of the equipment. Clean white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYgWdz_CydEr9aVnGQ11vlDdQw8dGC3U5K-omtoVq98ul-o_JYkcpbNYPbbstD_GsgwIBpPXQ_p43M5o8UFpAfXMbjAJt_nlxlM5I8i4miMTasVKD_cCvxIlPsbpK6gC8j8Ko_Bw90zCqwrYriSJHrkHtt1T1dxkVOb1NT1raeDvguygPs5ybxaHEassQHzJ78RHcPNpVQdre3dB76dS7dOxwg4NwIHPQc7F7gVy-81-hpuZPC4jI"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Commercial Cooking Equipment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">High-performance ranges, ovens, and fryers designed for high-volume kitchens.</p>
+<div class="text-primary-container font-label-md flex items-center gap-2 mt-auto">Explore Category <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+</div>
+</div>
+<!-- Category Card 2 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg border border-surface-variant shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all overflow-hidden cursor-pointer">
+<div class="aspect-square bg-surface-container w-full overflow-hidden relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A tall, multi-door commercial reach-in refrigerator in shiny stainless steel. The digital temperature display glows slightly. Shot from a slight angle to show depth against a minimalist light gray studio background. Professional industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT9UdnKyN_cdFY6ajph9Dakbt4RHMFeiKqodv2TNZUG08HHfCiYxSGufJctNVtG6GZTGQu4ynd79bVdFeY2ofhK9rWxuGHR4Q8AxFMzCfu7QrbrrBHF8JVZj9kfj1eFCvcjs29zcWhTDh-xrMuqHJgn7q3r3PYBAn7bdfayKsBulta0bjgZA0msSUIzOk6-mkkVGTk7eHunCHbxtvZMjmSdEAGKRU3SopC8HBe5hg0-iNetPR2eWU"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Refrigeration Equipment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Reliable chillers, freezers, and cold rooms for optimal food preservation.</p>
+<div class="text-primary-container font-label-md flex items-center gap-2 mt-auto">Explore Category <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+</div>
+</div>
+<!-- Category Card 3 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg border border-surface-variant shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all overflow-hidden cursor-pointer">
+<div class="aspect-square bg-surface-container w-full overflow-hidden relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A large commercial planetary mixer and a stack of stainless steel baking trays. The equipment looks robust and professional, designed for heavy bakery use. Well-lit against a stark white backdrop to emphasize the steel construction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe3C8QUQ56vNeOQET35QqWh6_QIT5b6x_1mJFOUEfLZUKp970Rmr654IMW6pIQEKqgqwW7OeAM9G6q4w2blgLLT9lgF7QIcICnhnKWAAfzQ72fvxHL-Jjn03CHnyjOjH0RhNW4QnYr5DUVggniqNHztibgva5BYGChVwOrQwAZtRoohKJICT2QbDEhKi1uZk6NG6ssZ4eUFEIZiQBw-CMDTgldZMarADj8oLJ3FxkTYFexLyI9Zo8"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Bakery Equipment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Mixers, proofers, and specialty ovens for commercial baking operations.</p>
+<div class="text-primary-container font-label-md flex items-center gap-2 mt-auto">Explore Category <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Custom Solutions Section -->
+<section class="bg-primary-container text-on-primary py-24 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjEpIi8+PC9zdmc+')] opacity-50"></div>
+<div class="max-w-[800px] mx-auto text-center relative z-10 flex flex-col items-center">
+<span class="material-symbols-outlined text-5xl mb-6 text-primary-fixed-dim">architecture</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Need a Complete Kitchen Solution?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-10">From equipment selection and stainless-steel fabrication to installation, Himchuli provides end-to-end solutions for professional commercial kitchens.</p>
+<button class="bg-on-primary text-primary-container px-8 py-4 rounded-DEFAULT font-label-md text-label-md hover:bg-surface-variant transition-colors shadow-lg">Discuss Your Project</button>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto text-center flex flex-col items-center">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Can't find what you're looking for?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-lg mx-auto">Contact our team for your specific commercial kitchen requirements. We offer custom fabrication and bespoke solutions.</p>
+<button class="bg-transparent border border-primary-container text-primary-container px-8 py-3 rounded-DEFAULT font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Request a Quote</button>
+</section>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest w-full py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md text-primary mb-4">Himchuli Steeltech</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Engineering excellence for professional kitchens.</p>
+</div>
+<div>
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Home</a></li>
+<li><a class="text-primary font-semibold hover:underline transition-all opacity-80 hover:opacity-100" href="#">Products</a></li>
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Solutions</a></li>
+</ul>
+</div>
+<div>
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Projects</a></li>
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Contact</a></li>
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:underline transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant pt-8 text-center md:text-left font-body-md text-body-md text-on-surface">
+            © 2024 Himchuli Steeltech Industries. All rights reserved.
+        </div>
+</footer>
+</body></html>
