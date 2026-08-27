@@ -29,7 +29,7 @@ export default function HomePage() {
       <EquipmentGallery
         images={homeHeroSlides.filter((src) => src.includes('equipment-grid'))}
         intervalMs={1450}
-        title="Featured commercial equipment"
+        title="Explore Cooking Equipment"
       />
 
       <section className="section">

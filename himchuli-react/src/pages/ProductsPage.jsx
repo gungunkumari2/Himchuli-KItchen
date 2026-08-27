@@ -37,7 +37,6 @@ export default function ProductsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Home / Products"
         title="Commercial Kitchen Equipment"
         description="Browse 60 equipment and fabrication types identified in Himchuli company materials, organized for professional kitchen planning."
         image={heroImages.products}

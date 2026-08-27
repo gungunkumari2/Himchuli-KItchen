@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import { company } from '../data/company'
 import { navItems } from '../data/siteContent'
 
@@ -20,6 +20,11 @@ function NavItems({ onNavigate = () => {} }) {
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [location.pathname])
 
   useEffect(() => {
     const closeOnEscape = (event) => {
@@ -29,11 +34,24 @@ export default function Header() {
     return () => window.removeEventListener('keydown', closeOnEscape)
   }, [])
 
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth > 1100) setIsOpen(false)
+    }
+    window.addEventListener('resize', onResize)
+    return () => window.removeEventListener('resize', onResize)
+  }, [])
+
+  useEffect(() => {
+    document.body.classList.toggle('nav-open', isOpen)
+    return () => document.body.classList.remove('nav-open')
+  }, [isOpen])
+
   return (
-    <header className="site-header">
+    <header className={`site-header${isOpen ? ' is-open' : ''}`}>
       <div className="site-header__brand-band">
         <div className="container site-header__brand-row">
-          <Link className="brand" to="/">
+          <Link className="brand" to="/" onClick={() => setIsOpen(false)}>
             <img
               src="/himchuli-logo-borderless.jpg"
               alt="Himchuli Steeltech Industries Pvt. Ltd."
@@ -58,7 +76,7 @@ export default function Header() {
             </span>
           </a>
 
-        <button
+          <button
             type="button"
             className="menu-toggle"
             aria-expanded={isOpen}
@@ -69,7 +87,7 @@ export default function Header() {
             <span className="material-symbols-outlined" aria-hidden="true">
               {isOpen ? 'close' : 'menu'}
             </span>
-            {isOpen ? 'Close' : 'Menu'}
+            <span className="menu-toggle__label">{isOpen ? 'Close' : 'Menu'}</span>
           </button>
         </div>
       </div>
@@ -98,7 +116,22 @@ export default function Header() {
         <div className="mobile-menu" id="mobile-menu">
           <nav className="container mobile-menu__inner" aria-label="Mobile">
             <NavItems onNavigate={() => setIsOpen(false)} />
-            <Link className="button button--primary mobile-menu__cta" to="/contact" onClick={() => setIsOpen(false)}>
+            <a
+              className="mobile-menu__catalogue"
+              href={company.catalogue}
+              download
+              onClick={() => setIsOpen(false)}
+            >
+              <span className="material-symbols-outlined" aria-hidden="true">
+                download
+              </span>
+              Download Catalogue
+            </a>
+            <Link
+              className="button button--primary mobile-menu__cta"
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+            >
               Get a Quote
             </Link>
           </nav>
